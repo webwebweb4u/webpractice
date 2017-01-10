@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta name="description" content="web forms"/>
+		<meta name="author" content="Damian Jarzabek"/>
+		<meta name="keywords" content="web, forms"/>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header></header>
+		<nav></nav>	
+		<main>
+      <form action="#.php" method="post" enctype="multipart/form-data" target="_blank">
+        <label for="text1" id="label1">Your name:</label>
+          <input type="text" id="text1" name="input1" value="name" size="4" maxlength="40" onfocus="this.value = this.value=='name'?'':this.value;" onblur="this.value = this.value==''?'name':this.value; this.style.color = this.value=='name'?'rgba(0,0,0,0.3)':'rgba(0,0,0,1)'; this.style.background = 'white' "/>
+        <label for="password1"/>
+        
+      
+      </form>
+		</main>
+		<footer></footer>
+	</body>
+</html>
