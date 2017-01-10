@@ -1,20 +1,53 @@
-#text1
+ 
+#text1, #password1
 {
-	margin:20px;
-	font-size: 2em;
-	color:rgba(0,0,0,0.3);
+
+	color:rgba(0,0,0,1);
 	text-align: center;
-	background-color: white;
-}
-#label1
-{	
-	font-size: 2em;
-	padding-right: 20px;
+	background-color: lightgrey;
+	border: 1px solid darkblue;
+
+
 }
 
-#text1:focus
-{
-	color:rgba(0,0,0,1);
-	text-align: left;	
+#label1
+{	
+	margin: 2%;
+	font-size: 2em;
+	width: 20%;
+	flex:1 1 auto;
+
 }
+#text1
+{	
+	
+	flex:0 1 auto;
+	width:50%;
+	margin: 2%;
+	font-size: 2em;
+	
+}
+#label2
+{
+	margin: 2%;
+	font-size: 2em;
+	flex:1 1 auto;
+	width:20%;
+
+}
+#password1
+{	width:50%;
+	flex:0 1 auto;
+	margin: 2%;
+	font-size: 2em;
+}
+#formflex
+{	margin: auto;
+	display:flex;
+	flex-flow: row wrap;
+	width:30%;
+	border: 2px darkblue solid;	
+}
+
+
 

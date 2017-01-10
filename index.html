@@ -12,13 +12,15 @@
 		<header></header>
 		<nav></nav>	
 		<main>
-      <form action="#.php" method="post" enctype="multipart/form-data" target="_blank">
-        <label for="text1" id="label1">Your name:</label>
-          <input type="text" id="text1" name="input1" value="name" size="4" maxlength="40" onfocus="this.value = this.value=='name'?'':this.value;" onblur="this.value = this.value==''?'name':this.value; this.style.color = this.value=='name'?'rgba(0,0,0,0.3)':'rgba(0,0,0,1)'; this.style.background = 'white' "/>
-        <label for="password1"/>
+      <form id="formflex" action="#.php" method="post" enctype="multipart/form-data" target="_blank">
+       
+        <label for="text1" class="fl" id="label1">Your name:</label>
+          <input type="text" class="f2" id="text1" placeholder="Enter name" name="input1"   maxlength="40"/>
         
-      
-      </form>
+        <label for="password1" class="fl" id="label2" />Password:</label>
+        	<input type="password" class="f2" placeholder="Password" name="passfield" id="password1"  maxlength="40" />
+       
+        	</form>
 		</main>
 		<footer></footer>
 	</body>
