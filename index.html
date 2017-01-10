@@ -9,17 +9,58 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<header></header>
-		<nav></nav>	
-		<main>
-      <form action="#.php" method="post" enctype="multipart/form-data" target="_blank">
-        <label for="text1" id="label1">Your name:</label>
-          <input type="text" id="text1" name="input1" value="name" size="4" maxlength="40" onfocus="this.value = this.value=='name'?'':this.value;" onblur="this.value = this.value==''?'name':this.value; this.style.color = this.value=='name'?'rgba(0,0,0,0.3)':'rgba(0,0,0,1)'; this.style.background = 'white' "/>
-        <label for="password1"/>
-        
-      
-      </form>
-		</main>
-		<footer></footer>
-	</body>
+	<header></header>
+<nav></nav>
+<main>
+<form id="formflex" action="mail_form_v2.php" method="post" enctype="multipart/form-data" target="_blank">
+	
+	<label for="text1" class="fl" id="label1">Your name:</label>
+	<input type="text" class="f2" id="text1" placeholder="Enter name" name="input1"  maxlength="40"/>
+	
+	<label for="password1" class="fl" id="label2" />Password:</label>
+	<input type="password" class="f2" placeholder="Password" name="passfield" id="password1"  maxlength="40" required="required" />
+	<label for="textarea" id="centerme" class="textarea">Comments:</label>
+	<textarea name="comments" placeholder=" put your comments here" cols="29" rows="5" id="textarea"></textarea>
+	<fieldset id="fieldset">
+		<legend>Checkbox area</legend>
+		<div><input id="checkbox1" type="checkbox" name="check one" value="checkIsChecked"/>
+		<label class="labelfonts" for="checkbox1">Checkbox one</label></div>
+		<div><input  id="checkbox2" type="checkbox" name="check two" value="checkIsChecked" checked="checked" />
+		<label class="labelfonts" for="checkbox2">Checkbox two</label></div>
+		<div><input  id="checkbox3" type="checkbox" name="check three" value="checkIsChecked"/>
+		<label class="labelfonts" for="checkbox3">Checkbox three</label><div>
+	</fieldset>
+	<fieldset>
+		<legend>Music genere</legend>
+		<div><label class="labelfonts" for="radio1">JAZZ</label>
+		<input type="radio" name="genere" id="radio1" value="jazz"/></div>
+		<div><label class="labelfonts" for="radio2">POP</label>
+		<input type="radio" name="genere" id="radio2" value="pop"/></div>
+	</fieldset>
+	<label for="select1" class="labelselect2">Select one option:</label>
+	<select name="options" size="1" id="select1">
+		<option value="one" checked="checked">option</option>
+		<option value="two">option</option>
+		<option value="three">option</option>
+		<option value="four">option</option>
+	</select>
+	<label for="select2" class="labelselect2">Select multiple option:</label>
+	<select name="options2" size="4" id="select2" multiple="multiple">
+		<option value="one" id="option1" checked="checked">option</option>
+		<option value="two">option</option>
+		<option value="three">option</option>
+		<option value="four">option</option>
+	</select>
+	<input type="hidden" name="fao" value="Jane" />
+	<input type="submit" class="submit"  name="submit" value="Ready to submit?"/>
+	<input type="reset"  class="submit" name="reset" value="reset">
+</form>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="b" value="50" /> +
+    <input type="number" name="a" value="10" /> =
+    <output name="result">60</output>
+</form>
+</main>
+<footer></footer>
+</body>
 </html>
