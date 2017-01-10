@@ -1,53 +1,122 @@
- 
-#text1, #password1
+ #labelselect2
+ {position: relative;}
+ #select2
+ {
+ 	vertical-align: middle;
+ }
+ .labelfonts
+ {
+ 	font-size: 1.1em;
+ }
+ #labelselect2::after
+ {
+ 	display: none;
+ 	content:"hold ctrl for multiple selection";
+ 	background-color: lightblue;
+ 	position: absolute;
+ 	width:100px;
+ 	left: 210px;	
+ }
+ label
+ {
+ 	margin: 2%;
+	font-size: 1.5em;
+	width: 30%;
+	flex:1 1 auto;
+	align-self: center;
+ }
+ fieldset
+ {	
+ 	flex:1 1 100%;
+ 	text-align: center;
+ }
+#textarea
 {
-
-	color:rgba(0,0,0,1);
-	text-align: center;
+	flex:1 1 auto;
+	width:50%;
 	background-color: lightgrey;
 	border: 1px solid darkblue;
+	margin:2%;
+	font-size: 1.5em;
+	text-align:center;
 
-
-}
-
-#label1
-{	
-	margin: 2%;
-	font-size: 2em;
-	width: 20%;
-	flex:1 1 auto;
-
-}
-#text1
-{	
 	
-	flex:0 1 auto;
+}
+#text1, #password1
+{
+	box-sizing: border-box;
+	text-align: left;
+	background-color: lightgrey;
+	border: 1px solid darkblue;
+	flex:1 1 auto;
+	text-align: center;
 	width:50%;
 	margin: 2%;
-	font-size: 2em;
-	
+	align-self: center;
+	font-size: 1.5em;
 }
-#label2
+legend
 {
-	margin: 2%;
-	font-size: 2em;
-	flex:1 1 auto;
-	width:20%;
-
-}
-#password1
-{	width:50%;
-	flex:0 1 auto;
-	margin: 2%;
-	font-size: 2em;
+	font-size: 1.6em;	
 }
 #formflex
 {	margin: auto;
 	display:flex;
 	flex-flow: row wrap;
-	width:30%;
+	width:40%;
+	transition: width 1s ease-out;
 	border: 2px darkblue solid;	
 }
+#fieldset
+{
+	width:100%;
+	
+}
+div
+{	text-align: left;
+	width: 40%;
+	float: left;
+}
+select
+{
+	flex: 0 1 50%;
+	align-self: center;
+	margin:2%;
+	font-size: 1.1em;
+	text-align: left;
+}
+.labelselect2
+{
+	flex:1 1 30%;
+	margin:2%;
+	font-size: 1.5em;
+}
+.submit
+{
+	flex:1 1 30%;
+	margin: 4%;
+	font-size: 1.3em;
+	padding:2%;
 
 
+}
+@media all and (max-width: 1000px) 
+
+{
+	#formflex{
+		width: 55%;
+	}
+}
+@media all and (max-width: 700px)
+{
+	#formflex{
+		width: 70%;
+	}
+}
+@media all and (max-width: 550px)
+{
+	#formflex{
+		width: 100%;
+	}
+}
 
