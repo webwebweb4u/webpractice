@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta name="description" content="web forms"/>
+		<meta name="author" content="Damian Jarzabek"/>
+		<meta name="keywords" content="web, forms"/>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<script>
+		
+		
+		function start(){
+		var myelement = document.getElementById('text1');
+		myelement.style.backgroundColor = "#000000";
+		if(myelement.value ==""){
+			myelement.style.background = "transparent url(Ok.png)  no-repeat top right";
+		}
+		return false
+	}
+		
+	
+
+</script>
+	</head>
+	<body>
+	<header></header>
+<nav></nav>
+<main>
+<form id="formflex" action="mail_form_v2.php" method="post" enctype="multipart/form-data" target="_blank">
+	
+	<label for="text1" class="farl" id="label1">Your name:</label>
+	<input type="text" class="f2" id="text1" placeholder="Enter name" name="input1" onblur="start()" required maxlength="40"/>
+	
+	<label for="password1" class="farl" id="label2"  />Password:</label>
+	<input type="password" required="" class="f2" placeholder="Password" name="passfield" id="password1"  maxlength="40" required="required" pattern=".{5,10}" required title="5 to 10 character" />
+	<label for="textarea" class="farl" id="centerme" class="textarea">Comments:</label>
+	<textarea name="comments" required="" class="f2" placeholder=" put your comments here" cols="29" rows="5" id="textarea"></textarea>
+	<label for="email" class="farl">E-mail:</label>
+	<input type="email" class="f2" name="email" id="email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
+	<input type="submit" name="submit" class="f2" value="click" id="submit">
+
+</form>
+</main>
+<footer></footer>
+</body>
+</html>
